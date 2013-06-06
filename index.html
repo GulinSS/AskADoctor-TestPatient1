@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="components/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="components/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin-top: 0;
+        margin-bottom: 60px;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron-container {
+        position: relative;
+      }
+      .jumbotron-back {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        height: 100%;
+        width: 100%;    
+        background-image: url("doctor.jpg");    
+        opacity: 0.5;
+      }
+      .jumbotron {
+        position: relative;
+        z-index: 2;
+        padding: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 70px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        margin: 14px;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <h4 class="pull-right" style="text-align: right; font-style: italic">— Мобильное приложение полезное по-настоящему</h4>
+        <h3 class="">Спроси врача <span class="label label-warning">в разработке</span></h3>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron-container">
+        <div class="jumbotron">
+          <h1>Консультации бесплатно</h1>
+          <p class="lead">Каждый из нас бывает в ситуации, когда необходима квалифицированная помощь и совет опытного специалиста. Часто консультацию хотелось бы получить без посещения больниц.</p>
+          <a class="btn btn-large btn-success" href="#myModal" role="button" data-toggle="modal">
+            Подписаться на запуск
+          </a>
+        </div>
+        <div class="jumbotron-back"></div>
+      </div>
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span4 box">
+          <h3 class="text-center">Мобильный формат</h3>
+          <p style="text-align: justify;">Мобильное приложение под широкий спектр платформ позволит быстро получать консультации по различным направлениям медицинской деятельности.</p>
+        </div>
+        <div class="span4">
+          <h3 class="text-center">Любые направления</h3>
+          <p style="text-align: justify;">Проект объединяет в себе специалистов медицины широкого спектра. Редкие врачи доступны для консультаций.</p>
+       </div>
+        <div class="span4">
+          <h3 class="text-center">Прозрачный рейтинг</h3>
+          <p style="text-align: justify;">Рекомендации врачей могут быть оценены пользователями. Отзвывы о специалистах от других пользователей доступны к просмотру.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      
+
+    </div> <!-- /container -->
+
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 style="margin: 0px;">Подписка на запуск проекта</h4>
+      </div>
+      <div class="modal-body" style="max-height:430px; margin: 0 120px" >
+<!-- SmartResponder.ru subscribe form code (begin) -->
+<link rel="stylesheet" href="https://imgs.smartresponder.ru/e1bbeb24091b44f1f4048bbc87edacd11278fd23/">
+<script type="text/javascript" src="https://imgs.smartresponder.ru/52568378bec6f68117c48f2f786db466014ee5a0/"></script>
+<script type="text/javascript">
+    _sr(function() {
+        _sr('form[name="SR_form_101880_66"]').find('div#sr-preload_').prop('id', 'sr-preload_101880_66');
+        _sr('#sr-preload_101880_66').css({'width':parseInt(_sr('form[name="SR_form_101880_66"]').width() + 'px'), 'height':parseInt(_sr('form[name="SR_form_101880_66"]').height()) + 'px', 'line-height':parseInt(_sr('form[name="SR_form_101880_66"]').height()) + 'px'}).show();
+        if(_sr('form[name="SR_form_101880_66"]').find('input[name="script_url_101880_66"]').length) {
+            _sr.ajax({
+                url: _sr('input[name="script_url_101880_66"]').val() + '/' + (typeof document.charset !== 'undefined' ? document.charset : document.characterSet),
+                dataType: "script",
+                success: function() {
+                    _sr('#sr-preload_101880_66').hide();
+                }
+            });
+        }
+    });
+</script>
+<div id="outer_alignment" align="left">
+    <form class="sr-box" method="post" action="https://smartresponder.ru/subscribe.html" target="_blank" name="SR_form_101880_66" style="width: 299px; border: 1px solid rgb(200, 200, 200); margin-left: ; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">
+        <div id="sr-preload_" style="display: none; background-color: #f6f6f6; opacity: 0.5; position: absolute; z-index: 100; text-align: center; font: bold 15px Arial;">Загрузка...</div>
+        <input type="hidden" name="element_header" value="" style="font-family: Arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255); border: none; box-shadow: none;">
+        <ul class="sr-box-list"><li class="sr-101880_66" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; height: 50px; text-align: center; background-color: rgb(251, 251, 251);">
+<label style="font-family: arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; display: none;" class="remove_labels"></label>
+<input type="text" name="field_name_first" class="sr-required" value="Ваше имя:" style="margin-top: 15px; background-image: none; font-family: arial; color: rgb(200, 200, 200); font-size: 12px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255); border: 1px solid rgb(200, 200, 200); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; height: 35px;">
+            </li><li class="sr-101880_66" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; height: 50px; text-align: center; background-color: rgb(251, 251, 251);">
+<label style="font-family: arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; display: none;" class="remove_labels"></label>
+<input type="text" name="field_email" class="sr-required" value="Ваш email-адрес:" style="margin-top: 15px; background-image: none; font-family: arial; color: rgb(200, 200, 200); font-size: 12px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255); border: 1px solid rgb(200, 200, 200); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; height: 35px;">
+            </li><li class="sr-101880_66" style="text-align: center; height: 50px; background-color: rgb(251, 251, 251); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;"><label style="font-family: arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; display: none;" class="remove_labels"></label><input type="text" name="field_city" style="margin-top: 15px; background-image: none; font-family: arial; color: rgb(200, 200, 200); font-size: 12px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255); border: 1px solid rgb(200, 200, 200); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; height: 35px;" value="Ваш город:"></li><li class="sr-101880_66" style="text-align: center; background-color: rgb(251, 251, 251); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; height: 50px;"><label style="margin-top: 15px; font-family: arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal;">Ваш пол:</label><table border="0" cellspacing="0" cellpadding="0" style="display:inline-table;"><tbody><tr><td><input type="radio" value="" name="field_sex" checked="checked" style="background-image: none; font-family: Arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255); border: none; box-shadow: none;"></td><td><p style="display: block; font-family: arial; color: rgb(0, 0, 0); font-size: 14px; font-style: normal; font-weight: normal; border: 0px solid rgb(0, 0, 0);">Мужчина</p></td><td><input type="radio" value="" name="field_sex" style="background-image: none; font-family: Arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255); border: none; box-shadow: none;"></td><td><p style="display: block; font-family: arial; color: rgb(0, 0, 0); font-size: 14px; font-style: normal; font-weight: normal; border: 0px solid rgb(0, 0, 0);">Женщина</p></td></tr></tbody></table></li><li class="sr-101880_66" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; text-align: center; background-color: rgb(251, 251, 251); border: 0px; height: 65px;"><table id="elem_table_subscribe" border="0" cellspacing="0" cellpadding="0" style="display: inline-table; border-collapse: separate; margin-top: 12px;"><tbody><tr><td id="elem_left_subscribe" valign="middle" style="background-image: url(https://imgs.smartresponder.ru/on/bb76f843df9be26bc9c673d51311b75f02a4a48d/); background-color: transparent; width: 17px; height: 35px; background-position: 0% 50%; background-repeat: no-repeat;"></td><td id="elem_container_subscribe" style="vertical-align: middle;"><input type="submit" name="subscribe" value="Подписаться" style="background-image: url(https://imgs.smartresponder.ru/on/29cdddd2c7584ef90392a40e9f768a8629cd0337/); font-family: arial; color: rgb(255, 255, 255); font-size: 14px; font-style: normal; font-weight: bold; background-color: transparent; border: 0px solid rgb(240, 240, 240); margin: 0px; box-shadow: none; padding: 0px 12px; height: 35px; width: 100%; background-position: 0% 50%; background-repeat: repeat repeat;"></td><td id="elem_right_subscribe" style="background-image: url(https://imgs.smartresponder.ru/on/246c141e33d5150d05cc1c6aaa8cf835f4387a36/); background-color: transparent; width: 17px; height: 35px; background-position: 0% 50%; background-repeat: no-repeat;"></td></tr></tbody></table></li><li class="sr-101880_66" style="text-align: center; height: 50px; background-color: rgb(251, 251, 251); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border: 0px;"><input type="hidden" name="element_privacy" value="" style="font-family: Arial; color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255); border: none; box-shadow: none;"><table id="elem_table_element_privacy" border="0" cellspacing="0" cellpadding="0" style="display:inline-table; border-collapse: separate;"><tbody><tr><td id="elem_left_element_privacy" valign="middle" style="background-image: url(https://imgs.smartresponder.ru/on/60085662f066f6eb63104ba44dbe21ec3df28f7b/); background-color: transparent; width: 14px; height: 16px; background-position: 0% 42%; background-repeat: no-repeat;"></td><td id="elem_container_element_privacy" style="vertical-align: middle;"><label class="sr-element" style="font-size: 11px; color: rgb(173, 173, 173); font-family: arial; font-weight: bold; font-style: normal; text-align: left; margin-left: 5px;">Никаких нежелательных писем</label></td><td id="elem_right_element_privacy"></td></tr></tbody></table></li></ul>
+        <input type="hidden" name="uid" value="320010">
+    <input type="hidden" name="did[]" value="381704"><input type="hidden" name="tid" value="0"><input type="hidden" name="lang" value="ru"><input name="script_url_101880_66" type="hidden" value="https://imgs.smartresponder.ru/on/6e7d54aeeac42d70e634c580f2d1395c1a8959f2/101880_66"></form>
+</div>
+<!-- SmartResponder.ru subscribe form code (end) -->        
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="components/jquery/jquery.js"></script>
+    <script src="components/bootstrap/docs/assets/js/bootstrap.js"></script>
+
+  </body>
+</html>
