@@ -70,12 +70,6 @@
         padding: 14px 24px;
       }
 
-      #feedback {
-        height: 450px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
-
       /* Supporting marketing content */
       .marketing {
         margin: 60px 0;
@@ -121,13 +115,44 @@
       .features-list .feature-description {
         margin-top: 4px;
         height: 130px;
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0,0,0,0.2);
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
         padding-top: 30px;
         color: white;
+      }
 
+      .features-list .feature-description {
+        text-align: center;
+      }
+
+      .features-list .feature-description table {
+        display: inline-block;
+        border-spacing: 5px;
+        border-collapse: separate;
+      }
+
+      .features-list .feature-description table td {
+        font-weight: 600;
+        font-size: 1.6em;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.2);
+      }
+
+      .features-list .carousel-caption {
+        background-color: rgba(0,0,0,0.2);
+        padding: 5px;
+      }
+
+      .features-list .carousel-caption h4 {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2em;
+      }
+
+      .carousel-indicators li {
+        cursor: pointer;
       }
     </style>
 
@@ -206,7 +231,16 @@ charset="utf-8"></script>
                 <div class="carousel-inner">
                   <div class="active item" style="width: 100%">
                       <div class="feature-description">
-                        <p style="text-align: justify;">iOS, Android, Blackberry, Symbian, Windows Phone</p>
+                        <table>
+                          <tr>
+                            <td>iOS</td>
+                            <td>Android</td>
+                          </tr>
+                          <tr>
+                            <td>Blackberry</td>
+                            <td>Windows Phone</td>
+                          </tr>
+                        </table>    
                       </div>
                       <div class="carousel-caption">
                         <h4 class="text-center">Мобильный формат</h4>
@@ -214,15 +248,30 @@ charset="utf-8"></script>
                   </div>
                   <div class="item">
                     <div class="feature-description">
-                      <p style="text-align: justify;">Гинекологи, Психологи, Психотерапевты, Урологи, Педиатры</p>
+                      <table>
+                        <tr>
+                          <td>Психотерапевты</td>
+                          <td>Психологи</td>
+                          <td>Педиатры</td>
+                        </tr>
+                          <td>Гинекологи</td>
+                          <td>Урологи</td>
+                        <tr>
+                      </table>    
                     </div>
                     <div class="carousel-caption">
-                      <h4 class="text-center">Самые востребованные специалисты</h4>
+                      <h4 class="text-center">Востребованные специалисты</h4>
                     </div>                    
                   </div>
                   <div class="item">
                     <div class="feature-description">
-                      <p style="text-align: justify;">Отзывы о врачах, модерация спама, выставление рейтинга</p>
+                      <table>
+                        <tr>
+                          <td>Отзывы о врачах</td>
+                        </tr>
+                          <td>Выставление рейтинга</td>
+                        <tr>
+                      </table>    
                     </div>
                     <div class="carousel-caption">
                       <h4 class="text-center">Прозрачный рейтинг</h4>
@@ -239,10 +288,6 @@ charset="utf-8"></script>
 
       <p class='lead'>Уважаемый посетитель!</p>
       <p style="text-align: justify;">Мобильное приложение "Спроси врача" принципиально отличается от других мобильных приложений своим подходом к разработке и взаимодействию с пользователями. Обязательно оставляйте отзывы, предложения и идеи — они очень важны и просматриваются каждый день. Функции мобильного приложения будут зависить от Ваших предложений и отзывов, оставленных в окне ниже. Все идеи, предложения и отзывы по бесплатным консультациям врачей будут обязательно учтены при разработке мобильного приложения "Спроси врача". Не забывайте подписываться на запуск, чтобы быть в курсе новостей мобильного приложения "Спроси врача" - бесплатные консультации врачей. Подписчикам по результатам теста потребности будут выполняться рассылки с эскизами приложения: Вы сможете влиять на дизайн и поведение разрабатываемого мобильного приложения "Спроси врача". Вместе мы сможем сделать действительно полезный инструмент, который будет помогать нам бесплатными консультациями врачей.</p>
-
-      <div id='feedback'>
-        <iframe style="width: 100%; height: 100%; border: 0;" frameborder="0" src="http://reformal.ru/widget/102790"></iframe>
-      </div>
 
       <hr>
       
@@ -295,5 +340,28 @@ charset="utf-8"></script>
     </script>
     <noscript><div><img src="//mc.yandex.ru/watch/21457387" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!--
+
+    <script type="text/javascript">
+    var reformalOptions = {
+        project_id: 102790,
+        project_host: "askadoctor.reformal.ru",
+        tab_orientation: "left",
+        tab_indent: "25%",
+        tab_bg_color: "#f0a000",
+        tab_border_color: "#FFFFFF",
+        tab_image_url: "http://tab.reformal.ru/0J7RgdGC0LDQstGM0YLQtSDQvtGC0LfRi9Cy/FFFFFF/5b7221532e893aebafbcbf83e8e3d17a/left/1/tab.png",
+        tab_border_width: 1
+    };
+    
+    (function() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript'; script.async = true;
+        script.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'media.reformal.ru/widgets/v3/reformal.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    })();
+</script><noscript><a href="http://reformal.ru"><img src="http://media.reformal.ru/reformal.png" /></a><a href="http://askadoctor.reformal.ru">Оставьте отзыв</a></noscript>
+  -->
   </body>
 </html>
