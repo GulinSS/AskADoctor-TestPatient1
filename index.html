@@ -21,6 +21,8 @@
         padding-top: 20px;
         padding-bottom: 60px;
         font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
       }
 
       /* Custom container */
@@ -135,7 +137,7 @@
 
       .features-list .feature-description table td {
         font-weight: 600;
-        font-size: 1.6em;
+        font-size: 1.4em;
         padding: 10px;
         background-color: rgba(0,0,0,0.2);
       }
@@ -148,11 +150,65 @@
       .features-list .carousel-caption h4 {
         font-weight: 400;
         font-style: italic;
-        font-size: 2em;
+        font-size: 1.5em;
       }
 
       .carousel-indicators li {
         cursor: pointer;
+      }
+
+      #steps {
+        text-align: center;
+        font-size: 0;
+        margin-bottom: 10px;
+      }
+
+      #steps .step {
+        display: inline-block;
+        border-radius: 20px 20px 20px 20px;
+        background-color: #ccc;
+        overflow: hidden;
+        font-size: 14px;
+        margin: 5px;
+        vertical-align: top;
+      }
+
+      #steps .step .number {
+        display: inline-block;
+        background-color: #999;
+        color: #eee;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 10px;
+        vertical-align: top;
+      }
+
+      #steps .step .caption {
+        display: inline-block;
+        width: 120px;
+        text-align: left;
+        vertical-align: -50%;
+      }
+
+      #steps .step.active {
+        background-color: #adff1a;
+      }
+
+      #steps .step.active .number {
+        background-color: #f1ffc4;
+        color: #78b500;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      .bolder {
+        font-weight: 400;
+      }
+
+      h2 {
+        font-weight: 300;
       }
     </style>
 
@@ -187,7 +243,7 @@ charset="utf-8"></script>
           <h1 style="">Консультации врачей бесплатно</h1>
           <div class="row-fluid">
             <div class="span4" style="margin-left: 20px;">
-<!-- SmartResponder.ru subscribe form code (begin) -->
+<!-- SmartResponder.ru subscribe form code (begin) 
 <link rel="stylesheet" href="https://imgs.smartresponder.ru/e1bbeb24091b44f1f4048bbc87edacd11278fd23/">
 <script type="text/javascript" src="https://imgs.smartresponder.ru/52568378bec6f68117c48f2f786db466014ee5a0/"></script>
 <script type="text/javascript">
@@ -218,7 +274,7 @@ charset="utf-8"></script>
         <input type="hidden" name="uid" value="320010">
     <input type="hidden" name="did[]" value="381704"><input type="hidden" name="tid" value="0"><input type="hidden" name="lang" value="ru"><input name="script_url_101880_61" type="hidden" value="https://imgs.smartresponder.ru/on/6e7d54aeeac42d70e634c580f2d1395c1a8959f2/101880_61"></form>
 </div>
-<!-- SmartResponder.ru subscribe form code (end) -->              
+SmartResponder.ru subscribe form code (end) -->              
             </div>
             <div class="span7 features-list">
               <div id="myCarousel" class="carousel slide">
@@ -286,11 +342,52 @@ charset="utf-8"></script>
       </div>
       <hr>
 
-      <p class='lead'>Уважаемый посетитель!</p>
-      <p style="text-align: justify;">Мобильное приложение "Спроси врача" принципиально отличается от других мобильных приложений своим подходом к разработке и взаимодействию с пользователями. Обязательно оставляйте отзывы, предложения и идеи — они очень важны и просматриваются каждый день. Функции мобильного приложения будут зависить от Ваших предложений и отзывов, оставленных в окне ниже. Все идеи, предложения и отзывы по бесплатным консультациям врачей будут обязательно учтены при разработке мобильного приложения "Спроси врача". Не забывайте подписываться на запуск, чтобы быть в курсе новостей мобильного приложения "Спроси врача" - бесплатные консультации врачей. Подписчикам по результатам теста потребности будут выполняться рассылки с эскизами приложения: Вы сможете влиять на дизайн и поведение разрабатываемого мобильного приложения "Спроси врача". Вместе мы сможем сделать действительно полезный инструмент, который будет помогать нам бесплатными консультациями врачей.</p>
-
-      <hr>
+      <h2>Этапы разработки</h2>
       
+      <div class="row-fluid">
+        <div class="span3">
+          <div id="steps">
+            <div class="step active">
+              <div class="number">1</div>
+              <div class="caption bolder">Анализ потребностей</div>
+            </div>
+            <div class="step">
+              <div class="number">2</div>
+              <div class="caption bolder">Написание кода</div>
+            </div>
+            <div class="step">
+              <div class="number">3</div>
+              <div class="caption bolder">Регистрация в маркетах</div>
+            </div>
+          </div>
+        </div>
+        <div class="span9">
+          <p>Мобильное приложение "Спроси врача" принципиально отличается от других мобильных приложений своим подходом к разработке и взаимодействию с пользователями.  Функции мобильного приложения будут зависить от Ваших предложений.</p>
+          <p>На текущем этапе выполняется сбор информации о потребностях пользователей для последующего анализа и выработки решения. На следующем этапе будет выполняться разработка приложения и, написание кода. Завершающий этап будет представлен регистрацией приложения каталогах приложений для каждой из платформ. Жду Ваших оценок и мнений.</p>
+        </div>
+      </div>
+
+      <h2>Анализ потребностей</h2>
+      <p>Примите участие в разработке бесплатного мобильного приложения. Помогите провести анализ Ваших потребностей, ответив на вопросы разделов ниже:</p>
+
+      <div class="row-fluid">
+        <div class="span3">
+          <ul class="nav nav-pills nav-stacked">
+            <li class='active bolder'><a data-toggle="tab" href="#demography">1. Заполнить анкету</a></li>
+            <li class='bolder'><a data-toggle="tab" href="#needs">2. Оценить потребности</a></li>
+            <li class='bolder'><a data-toggle="tab" href="#layouts">3. Посмотреть макеты</a></li>
+          </ul>
+        </div>
+        <div class="span9">
+          <div class="tab-content">
+            <div class="tab-pane active" id="demography">demography</div>
+            <div class="tab-pane" id="needs">needs</div>
+            <div class="tab-pane" id="layouts">layouts</div>
+          </div>
+        </div>
+      </div>
+
+      <hr>        
       <a style="display: none;" href="https://plus.google.com/112280712605958897104?rel=author">Google</a>
       <p>Самара, 2013. <span class="label label-important"><strong>Не пользуйтесь результатами консультаций без согласования с лечащим врачом.</strong></span></p>
       <a href="http://gulin.pro/2013/06/ask-a-doctor-begin/">Подробнее о разработке</a>      
