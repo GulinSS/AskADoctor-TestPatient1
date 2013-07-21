@@ -20,9 +20,9 @@
         body {
         padding-top: 20px;
         padding-bottom: 60px;
+        font-size: 16px;          
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 16px;
         }
 
         /* Custom container */
@@ -49,9 +49,29 @@
         background-image: url("doctor.jpg");    
         opacity: 0.6;
         }
+        .jumbotron-back-vignette {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        height: 100%;
+        width: 100%;    
+
+        background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 63%, rgba(0,0,0,0.25) 99%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
+
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(63%,rgba(0,0,0,0)), color-stop(99%,rgba(0,0,0,0.25)), color-stop(100%,rgba(0,0,0,0.25))); /* Chrome,Safari4+ */
+
+        background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 63%,rgba(0,0,0,0.25) 99%,rgba(0,0,0,0.25) 100%); /* Chrome10+,Safari5.1+ */
+
+        background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 63%,rgba(0,0,0,0.25) 99%,rgba(0,0,0,0.25) 100%); /* Opera 12+ */
+
+        background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 63%,rgba(0,0,0,0.25) 99%,rgba(0,0,0,0.25) 100%); /* IE10+ */
+
+        background: radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 63%,rgba(0,0,0,0.25) 99%,rgba(0,0,0,0.25) 100%); /* W3C */
+        }
         .jumbotron {
         position: relative;
-        z-index: 2;
+        z-index: 3;
         padding-top: 40px;
         text-align: center;
         }
@@ -211,8 +231,22 @@
         font-weight: 400;
         }
 
-        h2 {
+        h2, h3 {
         font-weight: 300;
+        }
+
+        .well h3 {
+          margin-top: 0px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #aaa;
+        }
+
+        .well form {
+          margin-bottom: 0px;
+        }
+
+        .alert {
+          font-weight: 400;
         }
     </style><!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -238,8 +272,8 @@
       </div><!-- Jumbotron -->
       <div class="jumbotron-container">
         <div class="jumbotron">
-          <h1 style="">
-            Консультации врачей бесплатно
+          <h1 style="line-height: 1.1">
+            Консультации врачей <br> <span style="font-size: 1.2em;">в твоем мобильном</span>
           </h1>
           <div class="row-fluid">
             <div class="span4 well" style="margin-left: 20px;">
@@ -344,6 +378,7 @@
           </div>
         </div>
         <div class="jumbotron-back"></div>
+        <div class="jumbotron-back-vignette"></div>
       </div>
       <hr>
       <h2>
@@ -411,73 +446,131 @@
           <div class="tab-content">
             <div class="tab-pane active" id="demography">
               <form class="form-horizontal well">
-                <fieldset>
-                  <legend>Анонимная анкета</legend>
-                  <p>
-                    Я 
-                    <select class="input-medium" name='gender'>
-                          <option>Мужчина</option>
-                          <option>Женщина</option>
-                    </select>
-                    в возрасте около 
-                    <select class="input-mini" name='gender'>
-                          <option>20</option>
-                          <option>30</option>
-                    </select>
-                    лет.
-                  </p>
-                  <p>
-                    Проживаю в городе
-                    <select class="input-medium" name='gender'>
-                          <option>Москва</option>
-                          <option>Санкт-Петербург</option>
-                    </select>.
-                  </p>
-                  <p>
-                    Пользуюсь мобильным устройством на платформе
-                    <select class="input-medium" name='gender'>
-                          <option>iOS (iPhone/iPad)</option>
-                          <option>Android</option>
-                    </select>.
-                  </p>
-                </fieldset>
-              </form>
-              <form class="form-horizontal well">
-                <fieldset>
-                  <legend>Анонимная анкета</legend>
-                  <div class="control-group">
-                    <label class="control-label" for="inputEmail">Пол и возраст:</label>
-                    <div class="controls">
-                      <select class="input-medium" name='gender'>
-                        <option>Мужчина</option>
-                        <option>Женщина</option>
-                      </select>
-                      <select class="input-mini" name='gender'>
+                <h3>Анонимная анкета</h3>
+                <p>
+                  Я 
+                  <select class="input-medium" name='gender'>
+                        <option>бесполый</option>
+                        <option>мужчина</option>
+                        <option>женщина</option>
+                  </select>
+                  в возрасте около 
+                  <select class="input-mini" name='gender'>
+                        <option>200</option>
                         <option>20</option>
                         <option>30</option>
-                      </select>
-                      лет
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputPassword">Город</label>
-                    <div class="controls">
-                      <select name='gender'>
+                  </select>
+                  лет.
+                </p>
+                <p>
+                  Проживаю в городе
+                  <select class="input-medium" name='gender'>
+                        <option>на скамейке</option>
                         <option>Москва</option>
                         <option>Санкт-Петербург</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                      <button type="submit" class="btn">Отправить</button>
-                    </div>
-                  </div>
-                </fieldset>
+                  </select>.
+                </p>
+                <p>
+                  Пользуюсь мобильным устройством на платформе
+                  <select class="input-medium" name='gender'>
+                        <option>Nokia 3310</option>
+                        <option>iOS (iPhone/iPad)</option>
+                        <option>Android</option>
+                  </select>.
+                </p>
+                <p>
+                  Считаю 
+                  <select class="input-medium" name='gender'>
+                        <option>уборщиков</option>
+                        <option>гинекологов</option>
+                        <option>урологов</option>
+                        <option>психологов</option>
+                        <option>педиатров</option>
+                  </select> наиболее востребованными специалистами. 
+                </p>
+                <p>
+                  <select class="input-medium" name='gender'>
+                        <option>???</option>
+                        <option>Посещаю</option>
+                        <option>Не посещаю</option>
+                  </select>
+                  частные клиники.
+                </p>
+                <div style="text-align: center;">
+                  <button type="submit" class="btn btn-warning btn-large">Принять участие</button>
+                </div>
               </form>
             </div>
             <div class="tab-pane" id="needs">
-              needs
+              <div class="well">
+                <h3>Решаемые проблемы</h3>
+                <p>Здесь представлен список проблем, которые будут решены для Вас в этом приложении. Пожалуйста, оцените их приоритет и необходимость:</p>
+
+                <div class="alert alert-info">
+                  <strong>1.</strong>
+                  Желаю получить онлайн консультацию, чтобы оценить конкретного врача и принять решение о лечении у него.
+                </div>
+                <div class="alert alert-info">
+                  <strong>2.</strong>
+                  Желаю получить список всех врачей в своем городе, чтобы их всех прозвонить, или написать им электронное письмо. Ценность онлайн консультаций сомнительна: для диагноза нужно обследование.
+                </div>
+                <div class="alert alert-info">
+                  <strong>3.</strong>
+                  Интересуют врачи из других городов: в своем городе врачам уже не доверяю, либо нужной специализации в своем городе просто нет.
+                </div>
+                <div class="alert alert-info">
+                  <strong>4.</strong>
+                  Хочу отправить фото врачу во время бесплатной консультации, чтобы лучше проиллюстрировать проблему.
+                </div>
+                <form>
+                  <table class='table table-striped table-bordered table-condensed'>
+                    <tr>
+                      <th>Номер проблемы</th>
+                      <th>-2</th>
+                      <th>-1</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio" checked="checked"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio" checked="checked"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio" checked="checked"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio" checked="checked"></td>
+                      <td><input type="radio"></td>
+                      <td><input type="radio"></td>
+                    </tr>
+                  </table>
+                  <p>В зависимости от Ваших оценок будет построен план разработки приложения, чтобы самые больные проблемы оказались решенными в самом начале.</p>
+                  <div style="text-align: center;">
+                    <button type="submit" class="btn btn-warning btn-large">Выразить мнение</button>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="tab-pane" id="layouts">
               layouts
@@ -521,25 +614,30 @@ var APPLICATION_ID = '04365154-C83E-C2AD-FFB9-F50C81254200',
           var onAll = function() {
             $("button", $this).attr("disabled", false);
           }
-          var async = new Backendless.Async(function() {
-            onAll();
-
-            ga('send', 'event', 'Subscribers', 'Add', 'New'); 
-            yaCounter21457387.reachGoal('SUBSCRIBE');
-
-            $this.slideUp('fast');
-            $("#subscribeOk").slideDown('fast');
-          }, onAll);
-
+          var email = $("input[name=email]", $this).val();
           e.preventDefault();
           $("button", $this).attr("disabled", true);
 
-          var email = $("input[name=email]", $this).val();
           if (validateEmail(email) === false) {
             onAll();
+
           } else {
-            subscribersStore.save(new Subscribers({email: email}), async);            
+            subscribersStore.save(new Subscribers({email: email}), new Backendless.Async(function() {
+              onAll();
+
+              try {
+                ga('send', 'event', 'Subscribers', 'Add', 'New'); 
+                yaCounter21457387.reachGoal('SUBSCRIBE');
+              } catch (e) {
+                console.log(e);
+              } finally {
+                $this.slideUp('fast');
+                $("#subscribeOk").slideDown('fast');
+              }
+            }, onAll));                        
           }
+
+          return false;
         })
         })
     </script><script type="text/javascript">
